@@ -12,10 +12,10 @@ export default () => (
     </Head>
 
 
-    <div className="symbol">
-      <i className="twa twa-2x twa-gem"></i>
-      <i className="twa twa-2x twa-zap"></i>
-    </div>
+    <a href="/" className="symbol">
+      <i className="twa twa-2x twa-gem animated fadeInLeft"></i>
+      <i className="twa twa-2x twa-zap animated fadeInRight"></i>
+    </a>
 
     <h1>Hey. I’m Víctor.</h1>
 
@@ -37,7 +37,15 @@ export default () => (
 
         .symbol {
           margin-bottom: 4rem;
+          display: block;
         }
+
+        .symbol i {
+          position: relative;
+          font-style: normal;
+        }
+
+
 
         .main {
           padding: 2rem;
@@ -59,6 +67,18 @@ export default () => (
         @media (min-width: 600px) {
           .symbol {
             margin-bottom: 8rem;
+          }
+
+          .symbol i {
+            transition: transform 0.5s ease;
+          }
+
+          .symbol:hover .twa-zap {
+            transform: translateX(-20px);
+          }
+
+          .symbol:hover .twa-gem {
+            transform: translateX(0);
           }
 
           .main {
