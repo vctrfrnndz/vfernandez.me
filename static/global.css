@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "Nitti-Web";
+  src: url('./fonts/nitti/nitti-normal.woff');
+}
+
+@font-face {
+  font-family: "Nitti-Web";
+  font-weight: bold;
+  src: url('./fonts/nitti/nitti-medium.woff');
+}
+
+@font-face {
+  font-family: "Nitti-Grotesk-Web";
+  src: url('./fonts/nitti/nittigrotesk-normal.woff');
+}
+
+@font-face {
+  font-family: "Nitti-Grotesk-Web";
+  font-weight: bold;
+  src: url('./fonts/nitti/nittigrotesk-medium.woff');
+}
+
+body {
+  font-family: "Nitti-Grotesk-Web", sans-serif;
+  font-size: 18px;
+}
+
+@media (min-width: 600px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
